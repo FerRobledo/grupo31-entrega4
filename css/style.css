@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 1280px;
+    height: 960px;
+}
+
+.btn-hamburguesa i{
+    width: 34px;
+    height: 4px;
+    background-color: #F39E46;
+    border: 4px solid #ffffff;
+}
+
+#background-presentacion{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+#arbol1{
+    position: absolute;
+    left: -153px;
+    top: -1px;
+    z-index: 1;
+}
+
+#pasto1{
+    position: absolute;
+    left: 161px;
+    top: 718px;
+    z-index: 0;
+}
+
+#piedra1{
+    position: absolute;
+    left: 129px;
+    top: 793px;
+    z-index: 2;
+}
+
+#pasto2{
+    position: absolute;
+    left: 197px;
+    top: 822px;
+    z-index: 3;
+}
+
+#muñeco1{
+    position: absolute;
+    left: 428px;
+    top: 513px;
+    rotate: -6.51deg;
+    z-index: 2;
+}
+
+#muñeco2{
+    position: absolute;
+    left: 551px;
+    top: 414px;
+    z-index: 1;
+    rotate: -6.72deg;
+}
+
+#muñeco3{
+    position: absolute;
+    left: 722px;
+    top: 349px;
+    rotate: 8.73deg;
+    z-index: 0;
+}
+
+#arbol2{
+    position: absolute;
+    left: 881px;
+    top: 107px;
+    z-index: 3;
+}
+
+#arbol3{
+    position: absolute;
+    left: 1081px;
+    top: 278px;
+    z-index: 1;
+}
+
+#piedra2{
+    position: absolute;
+    left: 1072px;
+    top: 738px;
+    z-index: 5;
+
+}
+
+#piedra3{
+    position: absolute;
+    left: 1035px;
+    top: 738px;
+    z-index: 4;
+    rotate: 180deg;
+}
+#piedra4{
+    position: absolute;
+    left: 1042px;
+    top: 786px;
+    z-index: 5;
+}
+#pasto3{
+    position: absolute;
+    left: 1028px;
+    top: 630px;
+    z-index: 0;
+}
+#pasto4{
+    position: absolute;
+    left: 1081px;
+    top: 662px;
+    z-index: 2;
+}
+#sombra1{
+    position: absolute;
+    left: 49px;
+    top: 762px;
+}
