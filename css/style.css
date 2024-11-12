@@ -8,13 +8,6 @@ body{
     height: 960px;
 }
 
-.btn-hamburguesa i{
-    width: 34px;
-    height: 4px;
-    background-color: #F39E46;
-    border: 4px solid #ffffff;
-}
-
 #background-presentacion{
     position: absolute;
     left: 0;
@@ -121,8 +114,70 @@ body{
     top: 662px;
     z-index: 2;
 }
-#sombra1{
+
+.sombra{
     position: absolute;
-    left: 49px;
+    opacity: 0.61;
+    filter: blur(10px);
+}
+#sombra1{
+    left: 492px;
     top: 762px;
+}
+#sombra2{
+    left: 608px;
+    top: 727px;
+}
+#sombra3{
+    left: 724px;
+    top: 697px;
+}
+
+.btn-hamburguesa span{
+    position: absolute;
+    left: 100px;
+    width: 34px;
+    height: 4px;
+    background-color: #F39E46;
+    border: 4px solid #fff;
+    z-index: 10;
+    border-radius: 50px;
+    box-shadow: 4px 5px 0 0 #02187E;
+}
+
+#span-top{
+    top: 20px;
+}
+
+#span-center{
+    top: 31px;
+}
+
+#span-bottom{
+    top: 42px;
+}
+
+#logo{
+    position: absolute;
+    left: 360px;
+    top: 55px;
+}
+
+.btn-comprar{
+    position: absolute;
+    top: 20px;
+    left: 980px;
+    display: flex;
+    color: white;
+    place-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background-color: #83C252;
+    border: solid 8px white ;
+    border-radius: 50px;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
