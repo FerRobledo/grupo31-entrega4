@@ -5,7 +5,8 @@
 
 body {
     width: 1280px;
-    height: 959px;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 #background-presentacion {
@@ -50,9 +51,8 @@ body {
 
 #muñeco1 {
     position: absolute;
-    left: 428px;
-    top: 513px;
-    rotate: -6.51deg;
+    left: -250px;
+    top: 700px;
     z-index: 2;
 }
 
@@ -99,14 +99,13 @@ body {
     left: 1035px;
     top: 738px;
     z-index: 3;
-    rotate: 180deg;
 }
 
 #piedra4 {
     position: absolute;
     left: 1042px;
     top: 786px;
-    z-index: 5;
+    z-index: 4;
 }
 
 #pasto3 {
@@ -326,10 +325,16 @@ nav {
     font-weight: 700;
     font-style: black;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
     overflow: hidden;
     width: 230px;
     transform: translateX(-250px);
+    cursor: pointer;
+}
+
+.categoria:hover{
+    font-size: 18px;
 }
 
 .openCat1 {
@@ -431,6 +436,7 @@ header{
 
 
 .segundaParte{
-    position: absolute;
-    top: 959px;
+    position: relative;
+    margin-top: 170vh;
+    z-index: 10;
 }
