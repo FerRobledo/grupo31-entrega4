@@ -52,7 +52,7 @@ body {
 #muñeco1 {
     position: absolute;
     left: -250px;
-    top: 700px;
+    top: 220px;
     z-index: 2;
 }
 
@@ -422,7 +422,7 @@ nav {
 header{
     width: 1280px;
     position: fixed;
-    z-index:  10;
+    z-index:  100;
 }
 
 #gradient{
@@ -436,7 +436,135 @@ header{
 
 
 .segundaParte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
-    margin-top: 170vh;
+    margin-top: 200vh;
     z-index: 10;
+    background-image: url("../images/ff2.png");
+    background-repeat: no-repeat;
+}
+
+
+.containerSegundaParte{
+    width: 1080px;
+}
+
+#titulo1{
+    width: 508px;
+    color: #1B428F;
+    font-family: Lato;
+    font-size: 47px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 94.5%; /* 44.415px */
+}
+
+#parrafo1{
+    width: 704px;
+    height: 154px; 
+    flex-shrink: 0;
+    margin-top: 22px;
+    color: #1B428F;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#muñeco5{
+    transform: translate(683px, -87px);
+}
+
+#muñeco4{
+    position: relative;
+    z-index: 11;
+    transform: translate(-62px, -722px);
+}
+
+#marcoImagen{
+    width: 518.38px;
+    height: 266.351px;
+    border: 29px solid #1B5F99;
+    border-radius: 77px;
+    background-image: url("../images/imgContent1.png");
+    margin-left: 136px;
+    transform: translateY(-32px);
+    background-position: center;
+    background-size: cover;
+}
+
+#contentSegundaParte{
+    transform: translateY(-1802px);
+}
+
+.contenedorCards{
+    width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-1490px);
+}
+
+.imgCard{
+    border-radius: 41px;
+    border: 9px solid #2982FF;
+    box-shadow: 4px 5px 0px 0px #02187E;
+    width: 315px;
+    height: 284px;
+    margin-bottom: 23px;
+}
+
+.card{
+    width: 333px;
+    color: #000;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card1{
+    background-image: url("../images/card1.png");
+    background-position: center;
+}
+.card2{
+    background-image: url("../images/card2.png");
+    background-position: center;
+}
+.card3{
+    background-image: url("../images/card3.png");
+    background-position: center;
+}
+
+#card1{
+    transform: translateY(500px);
+}
+#card2{
+    transform: translateY(500px);
+}
+#card3{
+    transform: translateY(500px);
+}
+
+.openCard1 {
+    animation: openCard 0.3s ease-in forwards;
+}
+
+.openCard2 {
+    animation: openCard 0.6s ease-in forwards;
+}
+
+.openCard3 {
+    animation: openCard 0.9s ease-in forwards;
+}
+
+@keyframes openCard {
+    from{
+        transform: translateY(500px);
+    } to {
+        transform: translateY(0px)
+    }
 }

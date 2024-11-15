@@ -7,7 +7,7 @@ const fondo = document.getElementById("background-presentacion");
 
 const scrollLimit = 1200;
 
-const scrollAparicionMuñeco1 = 600;
+const scrollAparicionMuñeco1 = 300;
 const scrollAparicionMuñeco2 = 900;
 const scrollAparicionMuñeco3 = 1200;
 
@@ -38,13 +38,13 @@ window.addEventListener('scroll', () => {
         moverElemento(element, .68);
     })
 
-    moverMuñeco(muñeco1, 600, 661, 1);
+    //moverMuñeco(muñeco1, 600, 1);
     moverElemento(muñeco2, 900, 1);
     moverElemento(muñeco3, 1200, 1);
 
     // Mostrar muñecos de a uno según el scroll
-    if (scrollPosition >= scrollAparicionMuñeco1) {
-        muñeco1.style.transform = 'translateX(661px)';
+    if (scrollPosition >= scrollAparicionMuñeco1 && scrollPosition < scrollLimit) {
+        muñeco1.style.transform = `translate(678px, ${scrollPosition}px)`;
     }
 
     if (scrollPosition >= scrollAparicionMuñeco2) {
@@ -64,13 +64,5 @@ function moverElemento(elemento, velocidad) {
     let moverse = Math.min(scrollPosition * velocidad, scrollLimit)
     if(moverse< scrollLimit){
         elemento.style.transform = `translateY(${moverse}px)`;
-    }
-
-    
-}
-
-function moverMuñeco(muñeco, x, y){
-    if (scrollPosition >= scrollAparicionMuñeco1) {
-        muñeco1.style.transform = 'translateX(661px)';
     }
 }
