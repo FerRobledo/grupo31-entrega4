@@ -1,6 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -567,4 +570,121 @@ header{
     } to {
         transform: translateY(0px)
     }
+}
+
+.terceraParte{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 1280px;
+        height: 1100px;
+        position: relative;
+        background-image: url("../images/top3raparte.png");
+        padding-top: 150px;
+        overflow: hidden;
+  
+}
+
+.contenedorSuperiorTerceraParte{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-descargar {
+    position: absolute;
+    top: 350px;
+    display: flex;
+    color: white;
+    place-items: center;
+    justify-content: center;
+    width: 540px;
+    background-color: #83C252;
+    border: solid 8px white;
+    border-radius: 50px;
+    font-size: 31px;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    padding: 10px;
+}
+
+.contenedorNumberBlocks{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#3raparte-muniecos{
+    position: absolute;
+
+    transition: transform 0.3s ease-in;
+}
+
+.cuartaParte{
+    height: fit-content;
+    width: 1280px;
+    padding: 70px;
+}
+
+.cuartaParteContenido{
+    width: 100%;
+}
+
+.cuartaParte-fila{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.cuartaParte-header{
+    width: 100%;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 70px;
+}
+
+.colIzq{
+    background-color: red;
+}
+
+.col-izq-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colDer{
+    background-color: #02187E;
+}
+
+.col-der-info h3{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.col-der-info{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    height: 400px;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.col-der-info::-webkit-scrollbar {
+    display: none;
+}
+
+.info-bloque{
+    width: 100%;
+    scroll-snap-align: start;
+    height: 100vh;
+    padding: 50px 100px;
 }
