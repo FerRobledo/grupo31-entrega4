@@ -1,6 +1,6 @@
 const contenedor = document.querySelector('.terceraParte');
         const image = document.getElementById('3raParte-muniecos');
-        const movementFactor = 0.008; // Factor para reducir el movimiento
+        const movementFactor = 0.08; // Factor para reducir el movimiento
 
         document.addEventListener('mousemove', (event) => {
             const rect = contenedor.getBoundingClientRect();

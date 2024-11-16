@@ -178,7 +178,7 @@ body {
     position: absolute;
     left: 100px;
     width: 34px;
-    height: 4px;
+    he: 4px;
     background-color: #F39E46;
     border: 4px solid #fff;
     z-index: 10;
@@ -447,6 +447,7 @@ header{
     z-index: 10;
     background-image: url("../images/ff2.png");
     background-repeat: no-repeat;
+    height: 1650px;
 }
 
 
@@ -470,7 +471,6 @@ header{
     flex-shrink: 0;
     margin-top: 22px;
     color: #1B428F;
-    font-family: Lato;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -488,8 +488,8 @@ header{
 }
 
 #marcoImagen{
-    width: 518.38px;
-    height: 266.351px;
+    width: 576.38px;
+    height: 324.351px;
     border: 29px solid #1B5F99;
     border-radius: 77px;
     background-image: url("../images/imgContent1.png");
@@ -514,12 +514,15 @@ header{
     border-radius: 41px;
     border: 9px solid #2982FF;
     box-shadow: 4px 5px 0px 0px #02187E;
-    width: 315px;
-    height: 284px;
+    width: 332px;
+    height: 302px;
     margin-bottom: 23px;
 }
 
 .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 333px;
     color: #000;
     font-family: Lato;
@@ -577,12 +580,32 @@ header{
         flex-direction: column;
         align-items: center;
         width: 1280px;
-        height: 1100px;
+        height: 1157px;
         position: relative;
         background-image: url("../images/top3raparte.png");
-        padding-top: 150px;
+        padding-top: 175px;
         overflow: hidden;
-  
+    
+}
+
+#h1-terceraParte{
+    width: 950px;
+    height: 153px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 61.14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+#h1-terceraParte span{
+    color: #FFF;
+    font-size: 61.14px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 110%;
 }
 
 .contenedorSuperiorTerceraParte{
@@ -590,59 +613,60 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    
 }
 
 .btn-descargar {
-    position: absolute;
-    top: 350px;
     display: flex;
     color: white;
     place-items: center;
     justify-content: center;
-    width: 540px;
+    width: 556px;
+    height: 82px;
     background-color: #83C252;
     border: solid 8px white;
-    border-radius: 50px;
+    border-radius: 111px;
     font-size: 31px;
     font-family: "Lato", sans-serif;
     font-weight: 900;
     font-style: normal;
-    padding: 10px;
+    box-shadow: 4px 5px 0px 0px #02187E;
+    margin-top: 62px;
 }
 
 .contenedorNumberBlocks{
     width: 100%;
     position: absolute;
     bottom: 0;
+    height: 767px;
 }
 
-#3raparte-muniecos{
-    position: absolute;
-
-    transition: transform 0.3s ease-in;
-}
 
 .cuartaParte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: fit-content;
     width: 1280px;
-    padding: 70px;
 }
 
 .cuartaParteContenido{
-    width: 100%;
+    width: 1080px;
 }
 
 .cuartaParte-fila{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+    display: flex;
+    width: 937px;
+    margin-left: 143px;
 }
 
 .cuartaParte-header{
-    width: 100%;
+    width: 1080px;
     font-size: 60px;
     font-weight: 600;
-    margin-bottom: 70px;
+    margin-top: 174px;
 }
 
 .colIzq{
@@ -650,6 +674,7 @@ header{
 }
 
 .col-izq-img{
+    margin-top: 67px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -659,32 +684,37 @@ header{
     background-color: #02187E;
 }
 
-.col-der-info h3{
+.col-der-info h3{   
     font-size: 40px;
-    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37.8px;
+    margin-bottom: 15px;
+}
+
+.col-der-info p{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18.9px;
 }
 
 .col-der-info{
+    margin-top: 180px;
+    margin-left: 179px;
     font-size: 20px;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
     height: 400px;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-
-.col-der-info::-webkit-scrollbar {
-    display: none;
 }
 
 .info-bloque{
-    width: 100%;
-    scroll-snap-align: start;
-    height: 100vh;
-    padding: 50px 100px;
+    width: 467px;
+    font-size: 20px;
+    margin-bottom: 267px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%;
 }
