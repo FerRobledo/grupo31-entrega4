@@ -569,8 +569,10 @@ header{
 
 @keyframes openCard {
     from{
+        opacity: 0;
         transform: translateY(500px);
     } to {
+        opacity: 1;
         transform: translateY(0px)
     }
 }
@@ -658,10 +660,8 @@ header{
 
 .cuartaParte-fila{
     display: flex;
-    
     width: 937px;
     margin-left: 143px;
-    position: relative;
 }
 
 .cuartaParte-header{
@@ -672,31 +672,63 @@ header{
     margin-bottom: 174px;
 }
 
-.colIzq{
-    background-color: red;
-}
-
 .col-izq-img{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 100%;
-    position: relative;
     overflow: hidden;
-    height: fit-content;
+    position: relative;
 }
 
-#cambioImagenes{
+.col-izq-img .imagen{  
+    width: 50%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    z-index: 0;
+} 
 
-    object-fit: cover;
-    transition: opacity 0.3s ease-in;
-    width: auto;
-    height: 400px;
-
+.imagen.visible {
+    opacity: 1;
+    z-index: 1;
 }
 
-.colDer{
-    background-color: #02187E;
+#imagen1{
+    transform: translateY(100px);
+}
+
+#imagen2{
+    transform: translateY(100px);
+}
+
+#imagen3{
+    width: 40%;
+    transform: translateY(100px);
+}
+
+#imagen4{
+    width: 70%;
+    transform: translateY(100px);
+}
+
+#imagen5{
+    transform: translateY(80px);
+}
+
+#imagen7{
+    width: 30%;
+}
+
+
+#imagen9{
+    width: 70%;
+    transform: translateY(100px);
+}
+
+#imagen10{
+    width: 60%;
+    transform: translateY(100px);
 }
 
 .col-der-info h3{   
@@ -712,14 +744,6 @@ header{
     font-style: normal;
     font-weight: 400;
     line-height: 18.9px;
-}
-
-.col-der-info{
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
 }
 
 .info-bloque{
