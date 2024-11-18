@@ -6,11 +6,14 @@ let spanbottom = document.getElementById("span-bottom");
 let cat1 = document.querySelector(".cat1");
 let cat2 = document.querySelector(".cat2");
 let cat3 = document.querySelector(".cat3");
+let nav = document.querySelector("nav");
 
 container.addEventListener("click", function(e) {
 
     if (spantop.classList.contains("openTop")) {
         // Si las animaciones de apertura están activas, se eliminan y se añaden las de cierre
+        nav.classList.add("closeNav");
+        nav.classList.remove("openNav");
         spantop.classList.remove("openTop");
         spantop.classList.add("closeTop");
         cat1.classList.remove("openCat1");
@@ -27,6 +30,8 @@ container.addEventListener("click", function(e) {
         spanbottom.classList.add("closeBottom");
     } else {
         // Si las animaciones de cierre están activas o es el primer clic, se eliminan y se añaden las de apertura
+        nav.classList.remove("closeNav");
+        nav.classList.add("openNav");
         spantop.classList.remove("closeTop");
         spantop.classList.add("openTop");
         cat1.classList.add("openCat1");

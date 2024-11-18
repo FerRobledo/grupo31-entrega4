@@ -1,5 +1,6 @@
 let logo = document.getElementById("logo");
 let gradient = document.getElementById("gradient");
+let header = document.querySelector("header");
 
 const initialWidth = 560;
 const initialHeight = 320;

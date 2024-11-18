@@ -2,7 +2,7 @@ let card1 = document.getElementById("card1")
 let card2 = document.getElementById("card2")
 let card3 = document.getElementById("card3")
 
-scrollInicio = 3000;
+scrollInicio = 2800;
 
 window.addEventListener("scroll", function(){
     let scrollPosition = window.scrollY;
