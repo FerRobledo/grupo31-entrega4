@@ -26,7 +26,7 @@ body {
 
 #arbol1 {
     position: absolute;
-    left: -153px;
+    left: -152px;
     top: -1px;
     z-index: 1;
 }
@@ -157,28 +157,30 @@ body {
 
 .btn-comprar {
     position: absolute;
-    top: 20px;
-    left: 980px;
+    top: 12px;
+    left: 972px;
     display: flex;
     color: white;
     place-items: center;
     justify-content: center;
-    width: 200px;
-    height: 50px;
+    width: 216px;
+    height: 66px;
     background-color: #83C252;
     border: solid 8px white;
     border-radius: 50px;
     font-size: 20px;
-    font-family: "Lato", sans-serif;
-    font-weight: 900;
     font-style: normal;
+    font-weight: 900;
+    line-height: 18.9px;
+    letter-spacing: 2.2px;
+    box-shadow: 4px 5px 0px 0px #02187E;
 }
 
 .btn-hamburguesa span {
     position: absolute;
-    left: 100px;
-    width: 34px;
-    he: 4px;
+    left: 96px;
+    width: 42px;
+    height: 12px;
     background-color: #F39E46;
     border: 4px solid #fff;
     z-index: 10;
@@ -187,15 +189,15 @@ body {
 }
 
 #span-top {
-    top: 20px;
+    top: 16px;
 }
 
 #span-center {
-    top: 31px;
+    top: 27px;
 }
 
 #span-bottom {
-    top: 42px;
+    top: 38px;
 }
 
 /* Animación para abrir */
@@ -227,13 +229,13 @@ body {
 /* Keyframes de apertura */
 @keyframes openTop {
     from {
-        top: 20px;
+        top: 16px;
         rotate: 0deg;
         box-shadow: 4px 5px 0 0 #02187E;
     }
 
     to {
-        top: 31px;
+        top: 27px;
         rotate: 45deg;
         box-shadow: none;
     }
@@ -253,13 +255,13 @@ body {
 
 @keyframes openBottom {
     from {
-        top: 42px;
+        top: 38px;
         rotate: 0deg;
         box-shadow: 4px 5px 0 0 #02187E;
     }
 
     to {
-        top: 31px;
+        top: 27px;
         rotate: -45deg;
         box-shadow: none;
     }
@@ -268,13 +270,13 @@ body {
 /* Keyframes de cierre */
 @keyframes closeTop {
     from {
-        top: 31px;
+        top: 27px;
         rotate: 45deg;
         box-shadow: none;
     }
 
     to {
-        top: 20px;
+        top: 16px;
         rotate: 0deg;
         box-shadow: 4px 5px 0 0 #02187E;
     }
@@ -294,13 +296,13 @@ body {
 
 @keyframes closeBottom {
     from {
-        top: 31px;
+        top: 27px;
         rotate: -45deg;
         box-shadow: none;
     }
 
     to {
-        top: 42px;
+        top: 38px;
         rotate: 0deg;
         box-shadow: 4px 5px 0 0 #02187E;
     }
@@ -310,6 +312,8 @@ nav {
     position: relative;
     height: 100%;
     margin-top: 100px;
+    left: -300px;
+    width: 300px;
     z-index: 10;
 }
 
@@ -352,6 +356,14 @@ nav {
     animation: openCat3 1.25s ease-in-out forwards;
 }
 
+.openNav{
+    animation: openNav 0s forwards;
+}
+
+.closeNav{
+    animation: closeNav 2s forwards;
+}
+
 .closeCat1 {
     animation: closeCat1 1.25s ease-in-out forwards;
 }
@@ -362,6 +374,24 @@ nav {
 
 .closeCat3 {
     animation: closeCat3 .75s ease-in-out forwards;
+}
+
+@keyframes openNav {
+    from{
+        left: -300px;
+    }
+    to{
+        left: 0px;
+    }
+}
+
+@keyframes closeNav {
+    from{
+        left: 0px;
+    }
+    to{
+        left: -300px;
+    }
 }
 
 @keyframes openCat1 {
@@ -426,6 +456,8 @@ header{
     width: 1280px;
     position: fixed;
     z-index:  100;
+    height: max-content;
+    height: 103px;
 }
 
 #gradient{
@@ -759,6 +791,39 @@ header{
 }
 
 .quintaParte{
-    background-color: orange;
-    height: 800px;
+    position: relative;
+    background-image: url("../images/fondoQuintaParte.png");
+    height: 1443.83px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+
+.contenido5{
+    width: 1080px;
+    padding-top: 309.83px;
+}
+
+.contenido5 h1{
+    width: 802px;
+    color: #FFF;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 94.5%;
+}
+
+.videoNumberBlocks{
+    width: 804px;
+    height: 452px;
+    margin-top: 46px;
+    border-radius: 45px;
+    border: 29px solid #FFF;
+}
+
+#muniecoParte5{
+    position: absolute;
+    top: 700px;  
+    left: 731px;
+} 

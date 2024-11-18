@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
             imagenes.forEach((img) => img.classList.remove("visible"));
             const imagenVisible = document.getElementById(imagenId);
             if (imagenVisible) {
-                console.log("Mostrando imagen:", imagenId)
                 imagenVisible.classList.add("visible");
             }
           }
