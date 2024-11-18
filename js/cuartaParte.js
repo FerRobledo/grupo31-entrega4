@@ -1,9 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
   const textos = document.querySelectorAll(".info-bloque");
-  const imagenes = document.querySelectorAll(".imagen");
+  const imagenDinamica = document.querySelector(".imagen-dinamica");
+  const imagenes = [
+    "/images/0.png",
+    "/images/1.png",
+    "/images/2.png",
+    "/images/3.png",
+    "/images/4.png",
+    "/images/5.png",
+    "/images/6.png",
+    "/images/7.png",
+    "/images/8.png",
+    "/images/9.png",
+    "/images/10.png",
+  ];
 
-  if (textos.length === 0 || imagenes.length === 0) {
-    console.error("No se encontraron elementos .info-bloque o .imagen");
+
+  if (textos.length === 0) {
+    console.error("No se encontraron elementos .info-bloque");
     return; // Salir si no hay elementos
   }
   
@@ -12,19 +26,25 @@ document.addEventListener("DOMContentLoaded", () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const imagenId = entry.target.getAttribute("data-imagen");
-          if (imagenId) {
-            imagenes.forEach((img) => img.classList.remove("visible"));
-            const imagenVisible = document.getElementById(imagenId);
-            if (imagenVisible) {
-                console.log("Mostrando imagen:", imagenId)
-                imagenVisible.classList.add("visible");
-            }
+          console.log("llego")
+          if (imagenId !== null) {
+            console.log(imagenId)
+            const rutaDinamica = imagenes[parseInt(imagenId)];
+            console.log("id de imagen seleccionado = " + rutaDinamica);
+              if(rutaDinamica){
+                imagenDinamica.src = rutaDinamica;
+                imagenDinamica.classList.add("visible");
+              }
+          }
+          else{
+            imagenDinamica.classList.remove("visible");
           }
         }
       });
     },
     {
-      threshold: 0.8,
+      threshold: 0.5,
+      rootMargin: "0px 0px -30% 0px",
     }
   );
 

@@ -672,64 +672,30 @@ header{
     margin-bottom: 174px;
 }
 
-.col-izq-img{
+.col-izq-img {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    overflow: hidden;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: flex-start; /* Alinea el contenido al inicio del eje principal */
     position: relative;
+    width: 100%;
+    height: auto; /* Ajusta la altura al contenido */
+    min-height: 300px; /* Define una altura mínima si es necesario */
 }
 
-.col-izq-img .imagen{  
+.imagen-dinamica {  
     width: 50%;
     height: auto;
-    opacity: 0;
-    transition: opacity 0.6s ease, transform 0.6s ease;
-    z-index: 0;
-} 
-
-.imagen.visible {
     opacity: 1;
-    z-index: 1;
+    position: sticky;
+    top: 15%; /* Se mantendrá sticky desde la parte superior del contenedor */
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-#imagen1{
-    transform: translateY(100px);
+.imagen-dinamica.visible {
+    opacity: 1;
+    transform: scale(1);
 }
 
-#imagen2{
-    transform: translateY(100px);
-}
-
-#imagen3{
-    width: 40%;
-    transform: translateY(100px);
-}
-
-#imagen4{
-    width: 70%;
-    transform: translateY(100px);
-}
-
-#imagen5{
-    transform: translateY(80px);
-}
-
-#imagen7{
-    width: 30%;
-}
-
-
-#imagen9{
-    width: 70%;
-    transform: translateY(100px);
-}
-
-#imagen10{
-    width: 60%;
-    transform: translateY(100px);
-}
 
 .col-der-info h3{   
     font-size: 40px;
