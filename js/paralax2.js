@@ -7,8 +7,8 @@ const imagenes = [
     "../images/imgContent4.png"
 ];
 
-let indiceActual = 0;
-
+let indiceActual = 0; // Imagen inicial
+// Cambiar imagen cada 3s
 setInterval(() => {
 indiceActual = (indiceActual + 1) % imagenes.length;
 marcoImagen.style.backgroundImage = `url("${imagenes[indiceActual]}")`;
@@ -17,11 +17,12 @@ marcoImagen.style.backgroundImage = `url("${imagenes[indiceActual]}")`;
 let muñeco4 = document.getElementById("muñeco4");
 let muñeco5 = document.getElementById("muñeco5");
 
-scrollInit = 1600;
+scrollInit = 1600; // Inicio de efecto Paralax
 
 window.addEventListener('scroll', () => {
     // Obtenemos la cantidad de desplazamiento en el eje Y
     let scrollPosition = window.scrollY - scrollInit;
+    
     
     mover(muñeco5, 683, -300, scrollPosition, 0.9);
     mover(muñeco4, -62, 450, scrollPosition, 0.4);

@@ -38,7 +38,7 @@ window.addEventListener('scroll', () => {
         moverElemento(element, .68);
     })
 
-    //moverMuñeco(muñeco1, 600, 1);
+    moverElemento(muñeco1, 600, 1);
     moverElemento(muñeco2, 900, 1);
     moverElemento(muñeco3, 1200, 1);
 

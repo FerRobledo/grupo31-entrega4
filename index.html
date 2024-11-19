@@ -195,8 +195,79 @@
                 <h1>¡Experimenta Efectos 3D Asombrosos en NumberBlocks: Una Aventura Matemática Inmersiva!</h1>
                 <p>En NumberBlocks, la aventura no solo está en el aprendizaje, ¡sino también en la experiencia visual! Disfruta de efectos 3D asombrosos que dan vida a cada número y desafío, haciendo que las matemáticas cobren una nueva dimensión. A medida que los niños interactúan con los personajes y los bloques, verán cómo sus acciones tienen un impacto real en el entorno, creando un aprendizaje dinámico y emocionante. ¡Cada sesión de juego se convierte en una experiencia inolvidable llena de color y diversión!</p>
             </div>
-            <img src="./images/muniecoSexta.png" alt="Muñeco">
+            <model-viewer 
+                id="modelViewer"
+                src="./images/munieco3d.glb"
+                alt="efecto 3d"
+                poster="./images/muniecoSexta.png"
+                loading="eager"
+                auto-rotate
+                camera-controls 
+            ></model-viewer>
         </div>
+        <div class="septimaParte">
+            <div class="containerBloque1">
+                <img id="bloque1" src="./images/bloque1.png" alt="munieco">
+            </div>
+            <div class="containerBloque2">
+                <img id="bloque2" src="./images/bloque2.png" alt="munieco">
+            </div>
+            <div class="containerBloque3">
+                <img id="bloque3" src="./images/bloque3.png" alt="munieco">
+            </div>
+            <div class="containerBloque4">
+                <img id="bloque4" src="./images/bloque4.png" alt="munieco">
+            </div>
+            <div class="containerBloque5">
+                <img id="bloque5" src="./images/bloque5.png" alt="munieco">
+            </div>
+            <div class="containerBloque6">
+                <img id="bloque6" src="./images/bloque6.png" alt="munieco">
+            </div>
+            <div class="containerBloque7">
+                <img id="bloque7" src="./images/bloque7.png" alt="munieco">
+            </div>
+            <div class="containerBloque8">
+                <img id="bloque8" src="./images/bloque8.png" alt="munieco">
+            </div>
+            <div class="containerBloque9">
+                <img id="bloque9" src="./images/bloque9.png" alt="munieco">
+            </div>
+            <div class="containerBloque10">
+                <img id="bloque10" src="./images/bloque10.png" alt="munieco">
+            </div>
+        </div>
+        <div class="preFooter">
+            <div class="containerPreFooter">
+                <h1>¿Quieres ser el primero en enterarse de todas las novedades?</h1>
+                <form id="formPreFooter">
+                    <input type="text" name="correo" id="inputCorreo" placeholder="Ingresa aquí tu correo">
+                    <input type="button" name="suscripción" id="inputSuscripcion" value="SUSCRIBIRSE">
+                </form>
+                <p>Al inscribirse en nuestra lista de correo, nos autoriza a ponernos en contacto con usted para enviarle ofertas y actualizaciones de marketing por correo electrónico, y también acepta nuestra <span>Política de privacidad</span> y las <span>Condiciones del servicio.</span></p>
+                <img id="imgPostP" src="./images/image 224.png" alt="Img">
+                <img id="gif1" src="https://media.giphy.com/media/5ddqGqO8x5rrJ7v5tf/giphy.gif" alt="gif">
+                <img id="gif2" src="https://media.giphy.com/media/HuocoB7MEUeLMifGFN/giphy.gif" alt="GIF">
+                <img id="gif3" src="https://media.giphy.com/media/fuTByMqFxstXjmDSYm/giphy.gif" alt="GIF">
+                <img id="nubePreFooter1" src="./images/nubePreFooter1.png" alt="nube">
+                <img id="nubePreFooter2" src="./images/nubePreFooter.png" alt="nube">
+                <img id="nubePreFooter3" src="./images/nubePreFooter.png" alt="nube">
+            </div>
+            <img id="pastoPreFooter" src="./images/pastoPreFooter.png" alt="Pasto">
+        </div>
+        <footer>
+            <div class="header-footer">
+                <img src="./images/headerFooter.png" alt="Header Footer">
+            </div>
+            <div class="contentFooter">
+                <p>©SEGA. All rights reserved. SEGA is registered in the U.S. Patent and Trademark Office. SEGA, the SEGA logo and SONIC SUPERSTARS are either registered trademarks or trademarks of SEGA CORPORATION or its affiliates. All other trademarks, logos and copyrights are property of their respective owners.©2023 The LEGO Group. LEGO, the LEGO logo, the Minifigure, and the Brick and Knob configurations are trademarks and/or copyrights of the LEGO Group. All other marks and trademarks are the property of their respective owners. All rights reserved."PS", "PS5" and "PS4" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.Microsoft, the Xbox Sphere mark, the Series X logo, Xbox One, and Xbox Series X are trademarks of the Microsoft group of companies.Nintendo Switch is a trademark of NintendoEPIC GAMES and the EPIC STORE LOGO are trademarks or registered trademarks of EPIC GAMES INC.©2023 Valve Corporation. Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.The ESRB rating icons are registered trademarks of the Entertainment Software Association.</p>
+                <div class="linksFooter">
+                    <a href="https://privacy.sega.com/en/sega-cookie-policy">COOKIE POLICY</a>
+                    <a href="https://privacy.sega.com/en/our-games">PRIVACY POLICY</a>
+                </div>
+                <img class="redes" src="./images/redes.png" alt="redes">
+            </div>
+        </footer>
     </body>
     <script src="./js/btn-hamburguesa.js"></script>
     <script src="./js/header.js"></script>
@@ -206,6 +277,14 @@
     <script src="./js/3raParte.js"></script>
     <script src="/js/cuartaParte.js"></script>
     <script src="/js/paralax5.js"></script>
+    <script 
+        type="module"
+        src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+        nomodule
+        src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
 </body>
 
 </html>
