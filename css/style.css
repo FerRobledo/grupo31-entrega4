@@ -706,26 +706,59 @@ header{
 
 .col-izq-img {
     display: flex;
-    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
-    align-items: flex-start; /* Alinea el contenido al inicio del eje principal */
+    flex-direction: column;
+    align-items: center; 
     position: relative;
     width: 100%;
-    height: auto; /* Ajusta la altura al contenido */
-    min-height: 300px; /* Define una altura mínima si es necesario */
+    height: auto; 
+    min-height: 300px; 
 }
 
 .imagen-dinamica {  
     width: 50%;
     height: auto;
-    opacity: 1;
+    opacity: 0;
     position: sticky;
-    top: 15%; /* Se mantendrá sticky desde la parte superior del contenedor */
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    top: 25%; 
+    transform: scale(0.7);
 }
 
 .imagen-dinamica.visible {
     opacity: 1;
     transform: scale(1);
+    transition: opacity 1000ms ease, transform 800ms ease;
+}
+
+#imagen-1{
+    width: 55%;
+}
+
+#imagen-2{
+    width: 45%;
+}
+
+#imagen-3{
+    width: 40%;
+}
+
+#imagen-4{
+    width: 70%;
+}
+
+#imagen-5{
+    width: 45%;
+}
+
+#imagen-7{
+    width: 30%;
+}
+
+#imagen-8{
+    width: 60%;
+}
+
+#imagen-9{
+    width: 60%;
 }
 
 

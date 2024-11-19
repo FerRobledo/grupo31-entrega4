@@ -32,9 +32,17 @@ document.addEventListener("DOMContentLoaded", () => {
             const rutaDinamica = imagenes[parseInt(imagenId)];
             console.log("id de imagen seleccionado = " + rutaDinamica);
               if(rutaDinamica){
+
+              // Remover clase para reiniciar la animación
+                imagenDinamica.classList.remove("visible");
+              // Agrego dinamicamente un id a cada imagen, para acomodarlas con CSS (#imagen-x)
+                imagenDinamica.id = `imagen-${imagenId}`;
+              // Actualizar la imagen después de un breve retraso
+              setTimeout(() => {
                 imagenDinamica.src = rutaDinamica;
                 imagenDinamica.classList.add("visible");
-              }
+              }, 100);
+            }
           }
           else{
             imagenDinamica.classList.remove("visible");
@@ -43,8 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     },
     {
-      threshold: 0.5,
-      rootMargin: "0px 0px -30% 0px",
+      threshold: 0.6,
+      rootMargin: "0px 0px -25% 0px",
     }
   );
 
