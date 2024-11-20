@@ -1090,6 +1090,10 @@ header{
     scale: 1.1;
 }
 
+#bloque1:hover, #bloque2:hover, #bloque3:hover, #bloque4:hover, #bloque5:hover, #bloque6:hover, #bloque7:hover, #bloque8:hover, #bloque9:hover, #bloque10:hover{
+    transition: transform .5s, scale .5s;
+}
+
 .preFooter{
     position: relative;
     display: flex;
