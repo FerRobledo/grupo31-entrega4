@@ -1301,3 +1301,59 @@ footer{
 .redes{
     margin-top: 35px;
 }
+
+.sprite-1{
+    position: absolute;
+    width: 480px;
+    height: 270px;
+    background: url(/images/spriteVerde.png);
+    animation: spritesheet1 1s steps(40) infinite;
+    transform: scale(100%);
+    translate: 50% 110%;    
+}
+
+@keyframes spritesheet1 {
+    from{
+        background-position: 0px;
+    }
+    to{
+        background-position: 19200px;
+    }
+}
+
+.sprite-2{
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    background: url(/images/spriteRed.png);
+    animation: spritesheet2 1s steps(15) infinite;
+    translate: 100% 45%;    
+    transform: scale(60%);
+}
+
+@keyframes spritesheet2 {
+    from{
+        background-position: 0px;
+        }
+    to{
+        background-position: 7200px;    
+    }
+}
+
+.sprite-3{
+    position: absolute;
+    width: 480px;
+    height: 270px;
+    background: url(/images/sprite3.png);
+    animation: spritesheet3 1s steps(40) infinite;
+    transform: translateY(115%);
+}
+
+@keyframes spritesheet3 {
+    from{
+        background-position: 0px;
+        }
+    to{
+        background-position: 19200px;    
+    }
+}
