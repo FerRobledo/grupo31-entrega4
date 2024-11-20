@@ -14,6 +14,10 @@
 </head>
 
 <body>
+    <div id="loading-screen">
+        <img id="logoCarga" src="./images/logo.png" alt="logo">
+        <div class="spinner"></div>
+    </div>
     <header>
         <div id="gradient"></div>
         <div class="btn-hamburguesa">
@@ -206,37 +210,43 @@
             ></model-viewer>
         </div>
         <div class="septimaParte">
-            <div class="containerBloque1">
-                <img id="bloque1" src="./images/bloque1.png" alt="munieco">
+            <div class="fila">
+                <div class="bloque">
+                    <img id="bloque1" src="./images/bloque1.png" alt="munieco">
+                </div>
+                <div class="bloque">
+                    <img id="bloque2" src="./images/bloque2.png" alt="munieco">
+                </div>
+                <div class="bloque">
+                    <img id="bloque3" src="./images/bloque3.png" alt="munieco">
+                </div>
+                <div class="bloque">
+                    <img id="bloque4" src="./images/bloque4.png" alt="munieco">
+                </div>
+                <div class="bloque">
+                    <img id="bloque5" src="./images/bloque5.png" alt="munieco">
+                </div>
             </div>
-            <div class="containerBloque2">
-                <img id="bloque2" src="./images/bloque2.png" alt="munieco">
-            </div>
-            <div class="containerBloque3">
-                <img id="bloque3" src="./images/bloque3.png" alt="munieco">
-            </div>
-            <div class="containerBloque4">
-                <img id="bloque4" src="./images/bloque4.png" alt="munieco">
-            </div>
-            <div class="containerBloque5">
-                <img id="bloque5" src="./images/bloque5.png" alt="munieco">
-            </div>
-            <div class="containerBloque6">
-                <img id="bloque6" src="./images/bloque6.png" alt="munieco">
-            </div>
-            <div class="containerBloque7">
-                <img id="bloque7" src="./images/bloque7.png" alt="munieco">
-            </div>
-            <div class="containerBloque8">
-                <img id="bloque8" src="./images/bloque8.png" alt="munieco">
-            </div>
-            <div class="containerBloque9">
-                <img id="bloque9" src="./images/bloque9.png" alt="munieco">
-            </div>
-            <div class="containerBloque10">
+            <div class="fila">
+
+                <div class="bloque">
+                    <img id="bloque6" src="./images/bloque6.png" alt="munieco">
+                </div>
+                <div class="bloque">
+                    <img id="bloque7" src="./images/bloque7.png" alt="munieco">
+                </div>
+                <div class="bloque">
+                    <img id="bloque8" src="./images/bloque8.png" alt="munieco">
+                </div>
+                <div class="bloque">
+                    <img id="bloque9" src="./images/bloque9.png" alt="munieco">
+                </div>
+                <div class="bloque">
                 <img id="bloque10" src="./images/bloque10.png" alt="munieco">
             </div>
         </div>
+    
+    </div>
         <div class="preFooter">
             <div class="containerPreFooter">
                 <h1>¿Quieres ser el primero en enterarse de todas las novedades?</h1>
@@ -269,6 +279,8 @@
             </div>
         </footer>
     </body>
+
+    <script src="./js/pantallaCarga.js"></script>
     <script src="./js/btn-hamburguesa.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/paralaxPresentacion.js"></script>

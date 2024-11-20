@@ -26,7 +26,9 @@ window.addEventListener('scroll', () => {
     
     mover(muñeco5, 683, -300, scrollPosition, 0.9);
     mover(muñeco4, -62, 450, scrollPosition, 0.4);
-    
+    mover(marcoImagen, 136, 72, scrollPosition, -0.1)
+
+
 })
 
 function mover(element, xInicial, yInicial, scrollPosition, velocidad){
