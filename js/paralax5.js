@@ -6,7 +6,6 @@ let video = document.querySelector(".videoNumberBlocks");
 window.addEventListener('scroll', () => {
     // Obtenemos la cantidad de desplazamiento en el eje Y
     let scrollPositionParte5 = window.scrollY - scrollInitParte5;
-    console.log(scrollPositionParte5);
     
     moverParte5(muniecoParte5, scrollPositionParte5, 0.9);
     moverParte5(video, scrollPositionParte5, -0.1)

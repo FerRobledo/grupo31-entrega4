@@ -1066,6 +1066,7 @@ header {
 }
 
 #modelViewer {
+    pointer-events: none;
     position: absolute;
     left: 599px;
     top: 7px;
