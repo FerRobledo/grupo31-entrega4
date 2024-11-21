@@ -29,7 +29,9 @@ const cambioImagenes = [
   img5,
   img6,
   img7,
-  img8
+  img8,
+  img9,
+  img10
 ];
 
 let cargadas = 0;
