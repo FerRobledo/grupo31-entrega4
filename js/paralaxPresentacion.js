@@ -3,7 +3,6 @@ const parallaxElements = document.querySelectorAll('.paralax-presentacion');
 const elementosGrupo1 = document.querySelectorAll('.grupo1')
 const elementosGrupo2 = document.querySelectorAll('.grupo2')
 const elementosGrupo3 = document.querySelectorAll('.grupo3')
-const fondo = document.getElementById("background-presentacion");
 
 const scrollLimit = 1800;
 
@@ -21,33 +20,34 @@ const muñeco3 = document.getElementById("muñeco3");
 
 // Agregamos un evento de scroll a la ventana
 window.addEventListener('scroll', () => {
-    // Obtenemos la cantidad de desplazamiento en el eje Y
-    const scrollPosition = window.scrollY;
-    let moveFondo = Math.min(scrollPosition * 0.75, scrollLimit);
-    
-    fondo.style.transform = `translateY(${moveFondo}px)`;
 
     elementosGrupo1.forEach((element) =>{
-        moverElemento(element, .8);
+        rotateElemento(element, .1);
     })
     elementosGrupo2.forEach((element) =>{
-        moverElemento(element, .7);
+        rotateElemento(element, .1);
     })
     elementosGrupo3.forEach((element) =>{
-        moverElemento(element, .68);
+        rotateElemento(element, .125);
     })
 
-    moverElemento(muñeco1, 0.75);
-    moverElemento(muñeco2, 0.7);
-    moverElemento(muñeco3, 0.65);
-    moverElemento(sombra1, 0.82);
-    moverElemento(sombra2, 0.75);
-    moverElemento(sombra3, 0.7);
+    moverElemento(muñeco1, -.1);
+    moverElemento(muñeco2, -.2);
+    moverElemento(muñeco3, -.4);
+    moverElemento(sombra1, .03);
+    moverElemento(sombra2, .025);
+    moverElemento(sombra3, .08);
 });
 
 
 function moverElemento(elemento, velocidad) {
     let scrollPosition = window.scrollY;
-    let moverse = Math.min(scrollPosition * velocidad, scrollLimit)
+    let moverse = scrollPosition * velocidad
     elemento.style.transform = `translateY(${moverse}px)`;
+}
+
+function rotateElemento(elemento, velocidad){
+    let scrollPosition = window.scrollY;
+    let rotar = scrollPosition * velocidad
+    elemento.style.transform = `rotateX(${rotar}deg)`
 }

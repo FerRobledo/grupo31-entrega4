@@ -20,10 +20,14 @@ function showLoader() {
 }
 
 // Oculta el loader y habilita el scroll
+// Anima la aparicion de objetos
 function hideLoader() {
     const loadingScreen = document.getElementById('loading-screen');
     loadingScreen.style.opacity = 0;
     loadingScreen.style.transition = 'opacity 0.5s ease-out';
+
+    let presentacion = document.querySelector(".presentacion");
+    presentacion.classList.add("presentacionOpen")
 
     setTimeout(() => {
         loadingScreen.style.display = 'none';

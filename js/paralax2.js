@@ -17,7 +17,7 @@ marcoImagen.style.backgroundImage = `url("${imagenes[indiceActual]}")`;
 let muñeco4 = document.getElementById("muñeco4");
 let muñeco5 = document.getElementById("muñeco5");
 
-scrollInit = 1600; // Inicio de efecto Paralax
+scrollInit = 500; // Inicio de efecto Paralax
 
 window.addEventListener('scroll', () => {
     // Obtenemos la cantidad de desplazamiento en el eje Y
@@ -25,7 +25,7 @@ window.addEventListener('scroll', () => {
     
     
     mover(muñeco5, 683, -300, scrollPosition, 0.9);
-    mover(muñeco4, -62, 450, scrollPosition, 0.4);
+    mover(muñeco4, -200, 650, scrollPosition, 0.4);
     mover(marcoImagen, 136, 72, scrollPosition, -0.1)
 
 
