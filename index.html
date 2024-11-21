@@ -11,12 +11,84 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    
 </head>
 
 <body>
     <div id="loading-screen">
         <img id="logoCarga" src="./images/logo.png" alt="logo">
-        <div class="spinner"></div>
+        <div class="my-loader">
+            <div class="rubiks-cube">
+              <div class="face front">
+                <div style="background: #ff3d00;" class="cube"></div>
+                <div style="background: #ffeb3b;" class="cube"></div>
+                <div style="background: #4caf50;" class="cube"></div>
+                <div style="background: #2196f3;" class="cube"></div>
+                <div style="background: #ffffff;" class="cube"></div>
+                <div style="background: #ffeb3b;" class="cube"></div>
+                <div style="background: #4caf50;" class="cube"></div>
+                <div style="background: #2196f3;" class="cube"></div>
+                <div style="background: #ff3d00;" class="cube"></div>
+              </div>
+          
+              <div class="face back">
+                <div style="background: #4caf50;" class="cube"></div>
+                <div style="background: #ff3d00;" class="cube"></div>
+                <div style="background: #ffeb3b;" class="cube"></div>
+                <div style="background: #2196f3;" class="cube"></div>
+                <div style="background: #ffffff;" class="cube"></div>
+                <div style="background: #ff3d00;" class="cube"></div>
+                <div style="background: #ffeb3b;" class="cube"></div>
+                <div style="background: #4caf50;" class="cube"></div>
+                <div style="background: #2196f3;" class="cube"></div>
+              </div>
+              <div class="face left">
+                <div style="background: #ffeb3b;" class="cube"></div>
+                <div style="background: #4caf50;" class="cube"></div>
+                <div style="background: #2196f3;" class="cube"></div>
+                <div style="background: #ff3d00;" class="cube"></div>
+                <div style="background: #ffffff;" class="cube"></div>
+                <div style="background: #4caf50;" class="cube"></div>
+                <div style="background: #2196f3;" class="cube"></div>
+                <div style="background: #ffeb3b;" class="cube"></div>
+                <div style="background: #ff3d00;" class="cube"></div>
+              </div>
+              <div class="face right">
+                <div style="background: #4caf50;" class="cube"></div>
+                <div style="background: #ff3d00;" class="cube"></div>
+                <div style="background: #ffeb3b;" class="cube"></div>
+                <div style="background: #2196f3;" class="cube"></div>
+                <div style="background: #ffffff;" class="cube"></div>
+                <div style="background: #ff3d00;" class="cube"></div>
+                <div style="background: #ffeb3b;" class="cube"></div>
+                <div style="background: #4caf50;" class="cube"></div>
+                <div style="background: #2196f3;" class="cube"></div>
+              </div>
+              <div class="face top">
+                <div style="background: #2196f3;" class="cube"></div>
+                <div style="background: #ffeb3b;" class="cube"></div>
+                <div style="background: #ff3d00;" class="cube"></div>
+                <div style="background: #4caf50;" class="cube"></div>
+                <div style="background: #ffffff;" class="cube"></div>
+                <div style="background: #ffeb3b;" class="cube"></div>
+                <div style="background: #ff3d00;" class="cube"></div>
+                <div style="background: #4caf50;" class="cube"></div>
+                <div style="background: #2196f3;" class="cube"></div>
+              </div>
+              <div class="face bottom">
+                <div style="background: #ffffff;" class="cube"></div>
+                <div style="background: #4caf50;" class="cube"></div>
+                <div style="background: #2196f3;" class="cube"></div>
+                <div style="background: #ff3d00;" class="cube"></div>
+                <div style="background: #ffeb3b;" class="cube"></div>
+                <div style="background: #4caf50;" class="cube"></div>
+                <div style="background: #2196f3;" class="cube"></div>
+                <div style="background: #ffffff;" class="cube"></div>
+                <div style="background: #ff3d00;" class="cube"></div>
+              </div>
+            </div>
+          </div>          
+          <p class="cargandoText">Cargando...</p>
     </div>
     <header>
         <div id="gradient"></div>
@@ -43,7 +115,7 @@
     </header>
 
     <body>
-        <div class="presentacion">
+        <div class="presentacion" style="overflow: hidden;">
             <img class="paralax-presentacion grupo1" id="arbol1" src="./images/arbol1.png" alt="arbol">
             <img class="paralax-presentacion grupo2" id="arbol2" src="./images/arbol2.png" alt="arbol">
             <img class="paralax-presentacion grupo3" id="arbol3" src="./images/arbol3.png" alt="arbol">
