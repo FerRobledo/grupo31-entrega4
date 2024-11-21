@@ -715,15 +715,15 @@ header {
 }
 
 .openCard1 {
-    animation: openCard 0.3s ease-in forwards;
+    animation: openCard 1.3s ease-in forwards;
 }
 
 .openCard2 {
-    animation: openCard 0.6s ease-in forwards;
+    animation: openCard 1.6s ease-in forwards;
 }
 
 .openCard3 {
-    animation: openCard 0.9s ease-in forwards;
+    animation: openCard 1.9s ease-in forwards;
 }
 
 @keyframes openCard {
