@@ -23,6 +23,7 @@ img10.src = "./images/10.png";
 
 const cambioImagenes = [
   img,
+  img1,
   img2,
   img3,
   img4,
@@ -36,7 +37,12 @@ const cambioImagenes = [
 
 let cargadas = 0;
 cambioImagenes.forEach(imagen => {
-  imagen.onLoad = cargadas++; 
+  try {
+    imagen.onLoad = cargadas++; 
+    
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 if(cargadas === cambioImagenes.length){
