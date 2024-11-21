@@ -791,15 +791,15 @@ header {
 }
 
 .openCard1 {
-    animation: openCard 1.3s ease-in forwards;
+    animation: openCard .6s ease-in forwards;
 }
 
 .openCard2 {
-    animation: openCard 1.6s ease-in forwards;
+    animation: openCard .9s ease-in forwards;
 }
 
 .openCard3 {
-    animation: openCard 1.9s ease-in forwards;
+    animation: openCard 1.2s ease-in forwards;
 }
 
 @keyframes openCard {
@@ -826,6 +826,7 @@ header {
     padding-top: 175px;
     overflow: hidden;
     z-index: 1;
+    margin-bottom: 174px;
 }
 
 #parte3-muniecos {
@@ -884,15 +885,13 @@ header {
 
 .cuartaParte-fila {
     display: flex;
-    width: 937px;
-    margin-left: 143px;
+    width: 100%;
 }
 
 .cuartaParte-header {
     width: 1080px;
     font-size: 60px;
     font-weight: 600;
-    margin-top: 174px;
     margin-bottom: 174px;
 }
 
@@ -901,9 +900,13 @@ header {
     flex-direction: column;
     align-items: center;
     position: relative;
-    width: 100%;
+    width: 50%;
     height: auto;
     min-height: 300px;
+}
+
+.col-der-info{
+    width: 50%;
 }
 
 .imagen-dinamica {
@@ -931,6 +934,7 @@ header {
 
 #imagen-3 {
     width: 40%;
+    top: 10%;
 }
 
 #imagen-4 {
@@ -939,10 +943,12 @@ header {
 
 #imagen-5 {
     width: 45%;
+    top: 15%;
 }
 
 #imagen-7 {
     width: 30%;
+    top: 10%;
 }
 
 #imagen-8 {
@@ -970,7 +976,7 @@ header {
 }
 
 .info-bloque {
-    width: 467px;
+    width: 100%;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;

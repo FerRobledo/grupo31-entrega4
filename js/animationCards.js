@@ -3,7 +3,7 @@ let card2 = document.getElementById("card2")
 let card3 = document.getElementById("card3")
 
 //Posicion en la que inicia el efecto paralax
-scrollInicio = 1700;
+scrollInicio = 1300;
 
 window.addEventListener("scroll", function(){
     let scrollPosition = window.scrollY;

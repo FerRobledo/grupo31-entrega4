@@ -15,44 +15,41 @@ document.addEventListener("DOMContentLoaded", () => {
     "/images/10.png",
   ];
 
-
   if (textos.length === 0) {
     console.error("No se encontraron elementos .info-bloque");
     return; // Salir si no hay elementos
   }
-  
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const imagenId = entry.target.getAttribute("data-imagen");
-          console.log("llego")
           if (imagenId !== null) {
-            console.log(imagenId)
             const rutaDinamica = imagenes[parseInt(imagenId)];
             console.log("id de imagen seleccionado = " + rutaDinamica);
-              if(rutaDinamica){
-
-              // Remover clase para reiniciar la animación
+            if (rutaDinamica) {
+              // Verificar si la imagen ya está configurada para evitar parpadeo
+              if (imagenDinamica.src !== location.origin + rutaDinamica) {
+                // Remover clase para reiniciar la animación
                 imagenDinamica.classList.remove("visible");
-              // Agrego dinamicamente un id a cada imagen, para acomodarlas con CSS (#imagen-x)
+                // Agregar dinámicamente un id para acomodarlas con CSS (#imagen-x)
                 imagenDinamica.id = `imagen-${imagenId}`;
-              // Actualizar la imagen después de un breve retraso
-              setTimeout(() => {
-                imagenDinamica.src = rutaDinamica;
-                imagenDinamica.classList.add("visible");
-              }, 100);
+                // Actualizar la imagen después de un breve retraso
+                setTimeout(() => {
+                  imagenDinamica.src = rutaDinamica;
+                  imagenDinamica.classList.add("visible");
+                }, 100);
+              }
             }
-          }
-          else{
+          } else {
             imagenDinamica.classList.remove("visible");
           }
         }
       });
     },
     {
-      threshold: 0.6,
-      rootMargin: "0px 0px -25% 0px",
+      threshold: 0.8,
     }
   );
 
