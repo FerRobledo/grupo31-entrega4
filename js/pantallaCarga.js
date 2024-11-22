@@ -1,12 +1,12 @@
 // Bloquea el scroll
 function disableScroll() {
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflowY = 'hidden';
     document.documentElement.style.overflow = 'hidden';
 }
 
 // Desbloquea el scroll
 function enableScroll() {
-    document.body.style.overflow = '';
+    document.body.style.overflowY = 'scroll';
     document.documentElement.style.overflow = '';
 }
 
