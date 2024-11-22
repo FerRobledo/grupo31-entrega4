@@ -10,8 +10,7 @@ body {
     overflow-y: hidden;
     overflow-x: hidden;
     width: 1280px;
-    height: 100vh;
-    overflow-x: hidden;
+    height: 100%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);

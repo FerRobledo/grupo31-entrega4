@@ -41,5 +41,9 @@ window.addEventListener('load', () => {
 
     setTimeout(() => {
         hideLoader();
-    }, 5000); // 5 segundos de espera
+    }, 3000); // 3 segundos de espera
+});
+
+window.addEventListener("resize", () => {
+    window.scrollTo(0, 0); // Fuerza el scroll al inicio
 });
