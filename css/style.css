@@ -7,13 +7,7 @@
 }
 
 body {
-    overflow-y: hidden;
-    overflow-x: hidden;
     width: 1280px;
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 body.loading,
@@ -1153,6 +1147,14 @@ header {
     /* Aumenta ligeramente el tamaño */
 }
 
+#numero1{
+    width: 30px;
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    rotate: -10deg;
+}
+
 /* Estilos específicos por bloque */
 #bloque1 {
     display: block;
@@ -1296,11 +1298,13 @@ header {
 .containerPreFooter {
     position: relative;
     width: 1080px;
+    padding-top: 80px;
 }
 
-.containerPreFooter h1 {
+.containerPreFooter h1{
     transform: translateY(-84px);
-    position: fixed;
+    position: absolute;
+    z-index: 10;
     width: 816px;
     color: #000;
     font-size: 60px;
@@ -1311,6 +1315,7 @@ header {
 }
 
 #formPreFooter {
+    position: relative;
     margin-top: 120px;
     margin-bottom: 100px;
     display: flex;
@@ -1441,21 +1446,22 @@ header {
 
 #nubePreFooter1 {
     position: absolute;
-    top: 243px;
+    top: 323px;
     left: 694px;
+    z-index: 0;
     animation: moverNubes 12s linear infinite;
 }
 
 #nubePreFooter2 {
     position: absolute;
-    top: 286px;
+    top: 366px;
     left: 500px;
     animation: moverNubes 10s linear infinite;
 }
 
 #nubePreFooter3 {
     position: absolute;
-    top: 545px;
+    top: 845px;
     left: 252px;
     animation: moverNubes 14s linear infinite;
 }

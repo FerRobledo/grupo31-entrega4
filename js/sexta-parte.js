@@ -14,6 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const anguloVertical = (y * 2 - 1) * Math.PI; // Limita el rango vertical
 
         // Ajusta la cámara del model-viewer
-        modelViewer.cameraOrbit = `-${anguloHorizontal}rad -${anguloVertical}rad`;
+        modelViewer.cameraOrbit = `${anguloHorizontal}rad -${anguloVertical}rad`;
     });
 });

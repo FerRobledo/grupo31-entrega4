@@ -37,10 +37,5 @@ window.addEventListener("scroll", () => {
     logo.style.height = `${newHeight}px`;
     logo.style.top = `${newTop}px`;
     gradient.style.transform = `translateY(${newGradient}px)`
-    moverHeader(scrollY);
 });
 
-
-function moverHeader(y){
-    header.style.transform = `translateY(${y}px)`;
-}
