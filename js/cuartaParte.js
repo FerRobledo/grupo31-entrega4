@@ -39,15 +39,14 @@ let cargadas = 0;
 cambioImagenes.forEach(imagen => {
   try {
     imagen.onLoad = cargadas++; 
-    
+    if(cargadas === cambioImagenes.length){
+      iniciarEvento();
+    }
   } catch (error) {
     console.log(error);
   }
 });
 
-if(cargadas === cambioImagenes.length){
-  iniciarEvento();
-}
 
 
 function iniciarEvento() {
